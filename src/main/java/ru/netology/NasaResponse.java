@@ -7,8 +7,8 @@ public class NasaResponse {
     private String date;
     private String explanation;
     private String hdurl;
-    private String media_type;
-    private String service_version;
+    private String mediaType;
+    private String serviceVersion;
     private String title;
     private String url;
 
@@ -17,15 +17,15 @@ public class NasaResponse {
             @JsonProperty ("date") String date,
             @JsonProperty ("explanation") String explanation,
             @JsonProperty ("hdurl") String hdurl,
-            @JsonProperty ("media_type") String media_type,
-            @JsonProperty ("service_version") String service_version,
+            @JsonProperty ("media_type") String mediaType,
+            @JsonProperty ("service_version") String serviceVersion,
             @JsonProperty ("title") String title,
             @JsonProperty ("url") String url) {
         this.date = date;
         this.explanation = explanation;
         this.hdurl = hdurl;
-        this.media_type = media_type;
-        this.service_version = service_version;
+        this.mediaType = mediaType;
+        this.serviceVersion = serviceVersion;
         this.title = title;
         this.url = url;
     }
@@ -54,20 +54,20 @@ public class NasaResponse {
         this.hdurl = hdurl;
     }
 
-    public String getMedia_type() {
-        return media_type;
+    public String getMediaType() {
+        return mediaType;
     }
 
-    public void setMedia_type(String media_type) {
-        this.media_type = media_type;
+    public void setMediaType(String mediaType) {
+        this.mediaType = mediaType;
     }
 
-    public String getService_version() {
-        return service_version;
+    public String getServiceVersion() {
+        return serviceVersion;
     }
 
-    public void setService_version(String service_version) {
-        this.service_version = service_version;
+    public void setServiceVersion(String serviceVersion) {
+        this.serviceVersion = serviceVersion;
     }
 
     public String getTitle() {
@@ -92,8 +92,8 @@ public class NasaResponse {
                 "date='" + date + '\'' +
                 ", explanation='" + explanation + '\'' +
                 ", hdurl='" + hdurl + '\'' +
-                ", media_type='" + media_type + '\'' +
-                ", service_version='" + service_version + '\'' +
+                ", media_type='" + mediaType + '\'' +
+                ", service_version='" + serviceVersion + '\'' +
                 ", title='" + title + '\'' +
                 ", url='" + url + '\'' +
                 '}';
